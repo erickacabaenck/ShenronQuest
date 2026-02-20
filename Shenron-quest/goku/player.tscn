@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c7epmyrkjgqsi"]
+
+[ext_resource type="Texture2D" uid="uid://m6dxyj51urw3" path="res://player/img/Custom _ Edited - Dragon Ball Customs - Goku - Goku (Kid, Sonic 1-Style).png" id="1_4flbx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sh265"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 420, 49, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(66, 420, 49, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(132, 420, 49, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(198, 420, 49, 54)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4flbx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_sh265")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onrkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3pqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqtel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sweqy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="player" type="CharacterBody2D" unique_id=314733550]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
+position = Vector2(-1098, 250)
+sprite_frames = SubResource("SpriteFrames_4flbx")
+animation = &"idle"
+frame_progress = 0.51419
+offset = Vector2(1088, 3013)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203791702]
