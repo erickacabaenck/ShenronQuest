@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771677774
+::res://::1771691046
 icon.svg::CompressedTexture2D::3307663757751543749::1771673446::1771674199::1::::<><><>0<>0<>d96b58c95ce7481e30206be9e40e1a36<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1771673446
 ::res://addons/godot-git-plugin/::1771673446
@@ -7,10 +7,11 @@ git_plugin.gdextension::GDExtension::6461502400555458733::1771673446::0::1::::<>
 THIRDPARTY.md::TextFile::-1::1771673446::0::1::::<><><>0<>0<><>::
 ::res://addons/godot-git-plugin/linux/::1771673446
 ::res://addons/godot-git-plugin/macos/::1771673446
-::res://addons/godot-git-plugin/windows/::1771674193
-::res://floor/::1771680921
-floor.tscn::PackedScene::8039652720057515331::1771680921::0::1::::<><><>0<>0<><>::uid://dtdf02pluxc83::::res://floor/img/Assets.png
-::res://floor/img/::1771682350
+::res://addons/godot-git-plugin/windows/::1771691042
+::res://environment/::1771691002
+::res://floor/::1771683958
+floor.tscn::PackedScene::8039652720057515331::1771683958::0::1::::<><><>0<>0<><>::uid://dtdf02pluxc83::::res://floor/img/Assets.png<>uid://c0uwrflu8q8k7::::res://floor/img/cascada.png
+::res://floor/img/::1771683963
 Assets.png::CompressedTexture2D::8499392885105496478::1560819282::1771680245::1::::<><><>0<>0<>f61b25c52cbc3b99122564cd6dfe048d<>res://.godot/imported/Assets.png-452162d73f43ee65e7e8c0a2a74125c0.ctex::
 cascada.png::CompressedTexture2D::6570216426318526920::1771682301::1771682353::1::::<><><>0<>0<>8275d67705953a7f46953aca95403eec<>res://.godot/imported/cascada.png-785e1a272575f4df931eee9584cb7c5f.ctex::
 nombre creador tileset1.txt::TextFile::-1::1771681285::0::1::::<><><>0<>0<><>::
@@ -21,5 +22,5 @@ PC _ Computer - RPG Maker MV - Tilesets - Outside.png::CompressedTexture2D::2154
 SNES - The Legend of Zelda_ A Link to the Past - Tilesets - Cliff & Water Tiles.png::CompressedTexture2D::6245698471762179971::1771673446::1771677805::1::::<><><>0<>0<>a3e82aec8c8d23c40a010b86d0574632<>res://.godot/imported/SNES - The Legend of Zelda_ A Link to the Past - Tilesets - Cliff & Water Tiles.png-c2a0719e7a5672edd709efe067290a39.ctex::
 ::res://player/::1771673446
 player.tscn::PackedScene::7028075346526547948::1771673446::0::1::::<><><>0<>0<><>::uid://m6dxyj51urw3::::res://player/img/Custom _ Edited - Dragon Ball Customs - Goku - Goku (Kid, Sonic 1-Style).png
-::res://player/img/::1771680847
+::res://player/img/::1771683964
 Custom _ Edited - Dragon Ball Customs - Goku - Goku (Kid, Sonic 1-Style).png::CompressedTexture2D::906486334132610828::1771673446::1771674200::1::::<><><>0<>0<>68d9d75b18f0579d864139e759bc1fec<>res://.godot/imported/Custom _ Edited - Dragon Ball Customs - Goku - Goku (Kid, Sonic 1-Style).png-a963c2e4d1bb9414e72bf9acc11fde9d.ctex::
