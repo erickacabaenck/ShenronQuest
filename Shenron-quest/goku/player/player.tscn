@@ -58,6 +58,18 @@ region = Rect2(0, 2, 65, 77)
 atlas = ExtResource("1_4flbx")
 region = Rect2(0, 160, 65, 77)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7qer"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 560, 65, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4c7l"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(65, 560, 65, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knn7v"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(130, 560, 65, 71)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_wodsf"]
 atlas = ExtResource("1_4flbx")
 region = Rect2(0, 4363, 65, 53)
@@ -167,6 +179,20 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_s7qer")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4c7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knn7v")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_wodsf")
 }, {
 "duration": 1.0,
@@ -217,9 +243,8 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
 position = Vector2(-1087, -3033)
 sprite_frames = SubResource("SpriteFrames_4flbx")
-animation = &"kame"
-frame = 1
-frame_progress = 0.538341
+animation = &"jump"
+frame_progress = 0.93775624
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
