@@ -1,0 +1,12 @@
+# Archivos específicos de Godot
+.godot/
+.import/
+export_presets.cfg
+
+# Binarios de exportación
+build/
+dist/
+
+# Archivos de configuración local del editor
+.pck
+.exe
