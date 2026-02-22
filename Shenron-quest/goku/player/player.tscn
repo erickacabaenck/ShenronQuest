@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c7epmyrkjgqsi"]
 
 [ext_resource type="Texture2D" uid="uid://m6dxyj51urw3" path="res://player/img/Custom _ Edited - Dragon Ball Customs - Goku - Goku (Kid, Sonic 1-Style).png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://j7fqgs7xd3mw" path="res://player/player.gd" id="1_rkbax"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oul6g"]
 atlas = ExtResource("1_4flbx")
@@ -239,12 +240,12 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D" unique_id=314733550]
+script = ExtResource("1_rkbax")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
 position = Vector2(-1087, -3033)
 sprite_frames = SubResource("SpriteFrames_4flbx")
-animation = &"jump"
-frame_progress = 0.018150736
+animation = &"run"
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
