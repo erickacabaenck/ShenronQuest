@@ -244,7 +244,7 @@ animations = [{
 position = Vector2(-1087, -3033)
 sprite_frames = SubResource("SpriteFrames_4flbx")
 animation = &"jump"
-frame_progress = 0.93775624
+frame_progress = 0.018150736
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
