@@ -245,6 +245,12 @@ size = Vector2(65, 54)
 [node name="player" type="CharacterBody2D" unique_id=314733550]
 position = Vector2(0, -3)
 script = ExtResource("1_rkbax")
+speed = 200
+acceleration = 200
+friction = 2000
+jump_force = -500
+air_acceleration = 1000
+air_friction = 800
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
