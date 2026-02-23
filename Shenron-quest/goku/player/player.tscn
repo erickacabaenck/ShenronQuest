@@ -251,21 +251,21 @@ friction = 2000
 jump_force = -500
 air_acceleration = 1000
 air_friction = 800
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
-position = Vector2(-1013, -3067)
+position = Vector2(-1013, -3078)
 sprite_frames = SubResource("SpriteFrames_4flbx")
 animation = &"dead"
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203791702]
-position = Vector2(75.5, -42)
+position = Vector2(75.5, -54)
 shape = SubResource("RectangleShape2D_rkbax")
+metadata/_edit_group_ = true
 
 [node name="tiempo" type="Timer" parent="." unique_id=1626023124]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1099894747]
-zoom = Vector2(3, 3)
+zoom = Vector2(4, 4)
 limit_bottom = 700

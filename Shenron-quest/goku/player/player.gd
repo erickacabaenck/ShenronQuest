@@ -41,16 +41,18 @@ func handle_air_acceleration(input_axis, delta):
 		velocity.x = move_toward(velocity.x, speed*input_axis, air_acceleration *delta)
 
 func update_animation(input_axis):
-	if input_axis !=0:
-		# velocidad de la animación será dependiente de la velocidad
-		ani_player.speed_scale = velocity.length()/100
-		ani_player.flip_h = (input_axis<0)
-		ani_player.play("run")
-	elif not is_on_floor():
-		ani_player.play("jump")
+	if not is_on_floor():
+		if ani_player.animation != "jump":
+			ani_player.play("jump")
+	elif input_axis != 0:
+		ani_player.speed_scale = max(abs(velocity.x) / speed, 0.7)
+		ani_player.flip_h = (input_axis < 0)
+		if ani_player.animation != "run":
+			ani_player.play("run")
 	else:
-		ani_player.speed_scale=1
-		ani_player.play("idle")
+		ani_player.speed_scale = 1
+		if ani_player.animation != "idle":
+			ani_player.play("idle")
 
 func _physics_process(delta: float) -> void:
 	var input_axis = Input.get_axis("mover_izquierda","mover_derecha")

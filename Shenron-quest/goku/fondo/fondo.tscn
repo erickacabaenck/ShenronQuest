@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c4g6ojdamvaux"]
+
+[ext_resource type="Texture2D" uid="uid://cjkvh1tqwl44t" path="res://fondo/img/layer8.PNG" id="1_0qi51"]
+
+[node name="fondo" type="ParallaxBackground" unique_id=1074430831]
+
+[node name="layer_fondo" type="ParallaxLayer" parent="." unique_id=136197160]
+
+[node name="sprt_fondo" type="Sprite2D" parent="layer_fondo" unique_id=1134376825]
+scale = Vector2(1.809375, 1.7972223)
+texture = ExtResource("1_0qi51")
+centered = false
+
+[node name="layer_medio" type="ParallaxLayer" parent="." unique_id=53228991]
+
+[node name="sprt_medio" type="Sprite2D" parent="layer_medio" unique_id=2012858269]
+
+[node name="layer_primerplano" type="ParallaxLayer" parent="." unique_id=2051767779]
+
+[node name="sprt_primerplano" type="Sprite2D" parent="layer_primerplano" unique_id=110901159]
