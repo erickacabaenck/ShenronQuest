@@ -146,9 +146,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rgyib")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
-"speed": 8.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -255,7 +255,9 @@ air_friction = 800
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
 position = Vector2(-1013, -3078)
 sprite_frames = SubResource("SpriteFrames_4flbx")
-animation = &"dead"
+animation = &"attack"
+frame = 7
+frame_progress = 0.2949028
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 

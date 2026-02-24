@@ -11,7 +11,9 @@ extends CharacterBody2D
 @onready var ani_player = $AnimatedSprite2D
 ## @onready var contador: Control = $CanvasLayer/Contador
 
-var monedas: int = 0
+## var monedas: int = 0
+var atacar: bool = false
+
 
 func _ready() -> void:
 	add_to_group("jugadores")
@@ -53,15 +55,24 @@ func update_animation(input_axis):
 		ani_player.speed_scale = 1
 		if ani_player.animation != "idle":
 			ani_player.play("idle")
-
+func ejecutar_ataque():
+	atacar = true
+	ani_player.play("attack")
+	await ani_player.animation_finished
+	atacar = false
+	
 func _physics_process(delta: float) -> void:
+	
 	var input_axis = Input.get_axis("mover_izquierda","mover_derecha")
 	apply_gravity(delta)
 	handle_acceleration(input_axis, delta)
 	apply_friction(input_axis, delta)
 	handle_jump()
 	handle_air_acceleration(input_axis, delta)
-	update_animation(input_axis)
+	if Input.is_action_just_pressed("atacar") and not atacar:
+		ejecutar_ataque()
+	if not atacar:
+		update_animation(input_axis)
 	move_and_slide()
 	
 ## func add_moneda():
@@ -71,7 +82,7 @@ func _physics_process(delta: float) -> void:
 func morir():
 		# desactivo las físicas
 	set_physics_process(false)
-	$ani_player.play("muerte")
+	ani_player.play("muerte")
 	$tiempo.start()
 	await $tiempo.timeout
 	get_tree().reload_current_scene()
