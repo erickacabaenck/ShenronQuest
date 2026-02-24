@@ -240,7 +240,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
-size = Vector2(65, 54)
+size = Vector2(40, 54)
 
 [node name="player" type="CharacterBody2D" unique_id=314733550]
 position = Vector2(0, -3)
@@ -255,19 +255,19 @@ air_friction = 800
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1982040031]
 position = Vector2(-1013, -3078)
 sprite_frames = SubResource("SpriteFrames_4flbx")
-animation = &"attack"
-frame = 7
-frame_progress = 0.2949028
+animation = &"run"
+frame_progress = 0.45287392
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203791702]
-position = Vector2(75.5, -54)
+position = Vector2(74, -54)
 shape = SubResource("RectangleShape2D_rkbax")
 metadata/_edit_group_ = true
 
 [node name="tiempo" type="Timer" parent="." unique_id=1626023124]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1099894747]
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
 limit_bottom = 700
+drag_vertical_offset = -0.6
