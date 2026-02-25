@@ -55,6 +55,7 @@ func update_animation(input_axis):
 		ani_player.speed_scale = 1
 		if ani_player.animation != "idle":
 			ani_player.play("idle")
+			
 func ejecutar_ataque():
 	atacar = true
 	ani_player.play("attack")
@@ -80,7 +81,6 @@ func _physics_process(delta: float) -> void:
 	## contador.actualizar(monedas)
 	
 func morir():
-		# desactivo las físicas
 	set_physics_process(false)
 	ani_player.play("muerte")
 	$tiempo.start()
