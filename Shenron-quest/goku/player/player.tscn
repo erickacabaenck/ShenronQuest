@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://j7fqgs7xd3mw" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Texture2D" uid="uid://b6qtvap8d1vok" path="res://player/img/DragonBallSprites.png" id="2_rkbax"]
+[ext_resource type="PackedScene" uid="uid://cyjs03gsq523a" path="res://Timer/Timer.tscn" id="3_g1dw6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g1dw6"]
 load_path = "res://.godot/imported/DragonBallSprites.png-286d9f0145d3942d87567a77ef24fad5.ctex"
@@ -288,7 +289,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
-size = Vector2(59, 63)
+size = Vector2(41, 46)
 
 [node name="player" type="CharacterBody2D" unique_id=314733550 groups=["agua"]]
 position = Vector2(0, -3)
@@ -305,11 +306,12 @@ position = Vector2(-969.19257, -2949.4817)
 scale = Vector2(0.9523828, 0.96392006)
 sprite_frames = SubResource("SpriteFrames_4flbx")
 animation = &"run"
+frame_progress = 0.07042084
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203791702]
-position = Vector2(67, -45.5)
+position = Vector2(60.5, -37)
 shape = SubResource("RectangleShape2D_rkbax")
 metadata/_edit_group_ = true
 
@@ -319,3 +321,7 @@ metadata/_edit_group_ = true
 zoom = Vector2(3, 3)
 limit_bottom = 700
 drag_vertical_offset = -0.6
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=653936379]
+
+[node name="Timer" parent="CanvasLayer" unique_id=1823423660 instance=ExtResource("3_g1dw6")]
