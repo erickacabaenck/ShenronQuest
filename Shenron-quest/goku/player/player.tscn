@@ -276,4 +276,3 @@ drag_vertical_offset = -0.6
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1721222787]
 
 [node name="Timer" parent="CanvasLayer" unique_id=1823423660 instance=ExtResource("3_g1dw6")]
-segundos = 10.0
