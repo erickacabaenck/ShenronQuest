@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://c4g6ojdamvaux"]
 
 [ext_resource type="Texture2D" uid="uid://bd2las0nmo3ic" path="res://fondo/img/Background_2.png" id="1_0qi51"]
-[ext_resource type="Texture2D" uid="uid://b50mf03nefm7y" path="res://fondo/img/2e1097c6-87f7-495e-bf0b-f587c26f74bc-removebg-preview.png" id="2_dq6rq"]
+[ext_resource type="Texture2D" uid="uid://07ydeqxw8ixx" path="res://fondo/img/ae350b0d-8d01-4cf2-8ad1-6535c426f5ab-removebg-preview.png" id="2_dq6rq"]
 
 [node name="fondo" type="ParallaxBackground" unique_id=1074430831]
 
 [node name="layer_fondo" type="ParallaxLayer" parent="." unique_id=136197160]
+motion_scale = Vector2(0.1, 0.1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="sprt_fondo" type="Sprite2D" parent="layer_fondo" unique_id=1134376825]
@@ -15,11 +16,11 @@ texture = ExtResource("1_0qi51")
 centered = false
 
 [node name="layer_medio" type="ParallaxLayer" parent="." unique_id=53228991]
-motion_mirroring = Vector2(1152, 0)
+motion_scale = Vector2(0.2, 0.2)
 
 [node name="sprt_medio" type="Sprite2D" parent="layer_medio" unique_id=2012858269]
-position = Vector2(1.999939, 52)
-scale = Vector2(1.9072711, 1.6213236)
+position = Vector2(113, -172)
+scale = Vector2(1.7892157, 1.6446078)
 texture = ExtResource("2_dq6rq")
 centered = false
 
