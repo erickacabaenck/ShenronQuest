@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://m6dxyj51urw3" path="res://player/img/Custom _ Edited - Dragon Ball Customs - Goku - Goku (Kid, Sonic 1-Style).png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://j7fqgs7xd3mw" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="PackedScene" uid="uid://cyjs03gsq523a" path="res://Timer/Timer.tscn" id="3_g1dw6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oul6g"]
 atlas = ExtResource("1_4flbx")
@@ -271,3 +272,7 @@ metadata/_edit_group_ = true
 zoom = Vector2(3, 3)
 limit_bottom = 700
 drag_vertical_offset = -0.6
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1721222787]
+
+[node name="Timer" parent="CanvasLayer" unique_id=1823423660 instance=ExtResource("3_g1dw6")]
