@@ -3,17 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://c7epmyrkjgqsi" path="res://player/player.tscn" id="1_8a1ph"]
 [ext_resource type="PackedScene" uid="uid://dmsp518kacssh" path="res://floor/floor.tscn" id="2_wjl7u"]
 [ext_resource type="PackedScene" uid="uid://c4g6ojdamvaux" path="res://fondo/fondo.tscn" id="3_wjl7u"]
-[ext_resource type="PackedScene" uid="uid://bjln7dkq06rwb" path="res://enemigos/dinosaurio.tscn" id="5_ehb6n"]
-[ext_resource type="AudioStream" uid="uid://nw2qsh575dqh" path="res://environment/music/Megamix - Happy Dragon Ball Music to Motivate  Dragon Ball, Dragon Ball Z & Dragon Ball Super - Cornelius.mp3" id="5_x2wa3"]
-
-[sub_resource type="GDScript" id="GDScript_7uceq"]
-script/source = "extends Node2D
-
-@onready var music = $music
-"
 
 [node name="Environment" type="Node2D" unique_id=1345345069]
-script = SubResource("GDScript_7uceq")
 
 [node name="floor" parent="." unique_id=1449963381 instance=ExtResource("2_wjl7u")]
 position = Vector2(-3, -6)
@@ -23,12 +14,3 @@ position = Vector2(206, 556)
 scale = Vector2(0.5, 0.5)
 
 [node name="fondo" parent="." unique_id=1074430831 instance=ExtResource("3_wjl7u")]
-
-[node name="music" type="AudioStreamPlayer" parent="." unique_id=295392771]
-stream = ExtResource("5_x2wa3")
-autoplay = true
-parameters/looping = true
-
-[node name="Dinosaurio" parent="." unique_id=2054895077 instance=ExtResource("5_ehb6n")]
-position = Vector2(-278, 511)
-scale = Vector2(0.5, 0.5)
