@@ -9,6 +9,9 @@ extends CharacterBody2D
 @export var air_friction = 700
 
 @onready var ani_player = $AnimatedSprite2D
+@onready var jump = $jump
+@onready var attack = $attack
+@onready var dead = $dead
 
 var atacar: bool = false
 
@@ -32,6 +35,8 @@ func handle_jump():
 	if is_on_floor():
 		if Input.is_action_pressed("saltar"):
 			velocity.y = jump_force
+			jump.play()
+
 func handle_air_acceleration(input_axis, delta):
 	if is_on_floor(): return
 	if input_axis != 0:
@@ -56,7 +61,8 @@ func ejecutar_ataque():
 	ani_player.play("attack")
 	await ani_player.animation_finished
 	atacar = false
-	
+	attack.play()
+
 func _physics_process(delta: float) -> void:
 	
 	var input_axis = Input.get_axis("mover_izquierda","mover_derecha")
@@ -86,10 +92,12 @@ func morir():
 		return
 	set_physics_process(false)
 	ani_player.play("dead")
+	dead.play()
 	if has_node("tiempo"):
 		$tiempo.start()
 		await $tiempo.timeout
 	$tiempo.start()
 	await $tiempo.timeout
-	if is_inside_tree():
-		get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://menu_muerte/menu_muerte.tscn")
+	## if is_inside_tree():
+		## get_tree().reload_current_scene()
