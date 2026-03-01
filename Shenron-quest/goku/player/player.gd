@@ -98,5 +98,6 @@ func morir():
 		await $tiempo.timeout
 	$tiempo.start()
 	await $tiempo.timeout
-	if is_inside_tree():
-		get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://menu_muerte/menu_muerte.tscn")
+	## if is_inside_tree():
+		## get_tree().reload_current_scene()
