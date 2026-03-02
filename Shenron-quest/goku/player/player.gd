@@ -113,6 +113,7 @@ func reiniciar_nivel():
 	set_physics_process(false) 
 	
 	ani_player.play("dead") 
+	dead.play()
 	await ani_player.animation_finished
 	get_tree().reload_current_scene()
 
@@ -123,5 +124,6 @@ func morir_definitivamente():
 	set_physics_process(false)
 	
 	ani_player.play("dead")
+	dead.play()
 	await ani_player.animation_finished	
 	get_tree().change_scene_to_file("res://menu_muerte/menu_muerte.tscn")

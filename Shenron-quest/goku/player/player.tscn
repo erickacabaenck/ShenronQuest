@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://idhuvvp0bxme" path="res://contador_vidas/contador_vidas.tscn" id="4_boad6"]
 [ext_resource type="AudioStream" uid="uid://sxbv8pjkhbd1" path="res://player/SE/lumora_studios-pixel-jump-319167.mp3" id="4_qjkh3"]
 [ext_resource type="AudioStream" uid="uid://dq8bffua1ttpl" path="res://player/SE/dragon-studio-whoosh-effect-382717.mp3" id="5_g6k8r"]
+[ext_resource type="PackedScene" uid="uid://bporvejhu4b83" path="res://contador_bolas/contador_bolas.tscn" id="5_rgyib"]
 [ext_resource type="AudioStream" uid="uid://dfyd7a163sma4" path="res://player/SE/floraphonic-brass-fail-11-a-207140.mp3" id="6_g6k8r"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g1dw6"]
@@ -336,6 +337,8 @@ offset_top = 61.0
 offset_right = 10.0
 offset_bottom = 61.0
 
+[node name="ContadorBolas" parent="CanvasLayer" unique_id=1568365540 instance=ExtResource("5_rgyib")]
+
 [node name="attack" type="AudioStreamPlayer" parent="." unique_id=1742832552]
 stream = ExtResource("5_g6k8r")
 
@@ -344,3 +347,4 @@ stream = ExtResource("4_qjkh3")
 
 [node name="dead" type="AudioStreamPlayer" parent="." unique_id=1513763110]
 stream = ExtResource("6_g6k8r")
+volume_db = 1.164

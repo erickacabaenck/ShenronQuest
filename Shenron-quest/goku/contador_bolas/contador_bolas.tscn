@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bporvejhu4b83"]
+
+[ext_resource type="Script" uid="uid://byg5ja747a271" path="res://contador_bolas/contador_bolas.gd" id="1_s3rwc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_eneio"]
+font_size = 26
+
+[node name="ContadorBolas" type="Control" unique_id=1568365540]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s3rwc")
+
+[node name="TextoContador" type="Label" parent="." unique_id=897141713]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 14.0
+offset_right = 1126.0
+offset_bottom = 88.0
+text = "Bolas: 0/7"
+label_settings = SubResource("LabelSettings_eneio")
