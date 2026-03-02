@@ -30,7 +30,7 @@ func _process(delta: float) -> void:
 	if Global.tiempo_restante <= 0:
 		Global.tiempo_restante = 0
 		is_running = false
-		emit_signal("timeout")
+		timeout.emit()
 		set_process(false) 
 	
 	actualizar_interfaz()

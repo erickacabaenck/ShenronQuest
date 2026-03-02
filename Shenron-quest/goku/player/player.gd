@@ -20,7 +20,11 @@ func _ready() -> void:
 	add_to_group("jugadores")
 	emit_signal("vidas_actualizadas", Global.vidas)
 	Global.detener_tiempo = false
-
+	
+	var contador = get_tree().root.find_child("Timer", true, false)
+	if contador:
+		contador.timeout.connect(morir_definitivamente)
+		
 func _physics_process(delta: float) -> void:
 	if muerto: return 
 	
