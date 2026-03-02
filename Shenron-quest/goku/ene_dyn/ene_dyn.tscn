@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://enxiuvbf3aiq"]
 
-[ext_resource type="Script" uid="uid://kf6y67tul65u" path="res://ene_dyn.gd" id="1_52c8n"]
+[ext_resource type="Script" uid="uid://kf6y67tul65u" path="res://ene_dyn/ene_dyn.gd" id="1_52c8n"]
 [ext_resource type="Texture2D" uid="uid://biyjh23tfdbd8" path="res://ene_dyn/img/dinosaurio.png" id="2_5ltso"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_atcku"]
@@ -32,32 +32,34 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52c8n"]
-size = Vector2(322, 191)
+size = Vector2(301, 145)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ltso"]
-size = Vector2(321, 190)
+size = Vector2(313, 155)
 
 [node name="ene_dyn" type="CharacterBody2D" unique_id=1831578707]
 script = ExtResource("1_52c8n")
 
-[node name="ani_ene" type="AnimatedSprite2D" parent="." unique_id=521425598]
+[node name="ani_ene_dyn" type="AnimatedSprite2D" parent="." unique_id=521425598]
 sprite_frames = SubResource("SpriteFrames_e48vb")
 frame_progress = 0.6273954
 
-[node name="col_ene" type="CollisionShape2D" parent="." unique_id=214108479]
-position = Vector2(12, 11.5)
+[node name="col_ene_dyn" type="CollisionShape2D" parent="." unique_id=214108479]
+position = Vector2(10.5, 15.5)
 shape = SubResource("RectangleShape2D_52c8n")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=743593594]
 
 [node name="col_ene_dyn_ataque" type="CollisionShape2D" parent="Area2D" unique_id=1630040240]
-position = Vector2(11.5, 11)
+position = Vector2(9.5, 16.5)
 shape = SubResource("RectangleShape2D_5ltso")
 
 [node name="detectorIzquierdo" type="RayCast2D" parent="." unique_id=1625573415]
-target_position = Vector2(-147, 106)
+position = Vector2(-153, 1)
+target_position = Vector2(-3, 180)
 
 [node name="detectorDerecho" type="RayCast2D" parent="." unique_id=1101900698]
-target_position = Vector2(171, 105)
+position = Vector2(177, 1)
+target_position = Vector2(7, 182)
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_ene_area_body_entered"]

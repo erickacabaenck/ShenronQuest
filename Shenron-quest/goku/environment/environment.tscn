@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://01lk2unvbp0s" path="res://coleccionables/bola_dragon5.tscn" id="10_gewoo"]
 [ext_resource type="PackedScene" uid="uid://bwj8obvt1jfey" path="res://coleccionables/bola_dragon6.tscn" id="11_nsn85"]
 [ext_resource type="PackedScene" uid="uid://die28cx4axsw1" path="res://coleccionables/bola_dragon7.tscn" id="12_ypa7m"]
+[ext_resource type="PackedScene" uid="uid://enxiuvbf3aiq" path="res://ene_dyn/ene_dyn.tscn" id="13_0iorr"]
 
 [node name="Environment" type="Node2D" unique_id=1345345069]
 
@@ -33,26 +34,56 @@ stream = ExtResource("5_x2wa3")
 autoplay = true
 parameters/looping = true
 
-[node name="Node2D" type="Node2D" parent="." unique_id=622514197]
+[node name="coleccionables" type="Node2D" parent="." unique_id=622514197]
 scale = Vector2(0.05, 0.05)
 
-[node name="BolaDragon" parent="Node2D" unique_id=805512287 instance=ExtResource("6_ehb6n")]
+[node name="BolaDragon" parent="coleccionables" unique_id=805512287 instance=ExtResource("6_ehb6n")]
 position = Vector2(9160, -2820)
 
-[node name="BolaDragon2" parent="Node2D" unique_id=911952715 instance=ExtResource("7_vh8kr")]
+[node name="BolaDragon2" parent="coleccionables" unique_id=911952715 instance=ExtResource("7_vh8kr")]
 position = Vector2(-6179.9995, 3440)
 
-[node name="BolaDragon3" parent="Node2D" unique_id=1828437994 instance=ExtResource("8_h6u84")]
+[node name="BolaDragon3" parent="coleccionables" unique_id=1828437994 instance=ExtResource("8_h6u84")]
 position = Vector2(-38660, 5299.9995)
 
-[node name="BolaDragon4" parent="Node2D" unique_id=1624224232 instance=ExtResource("9_0iorr")]
+[node name="BolaDragon4" parent="coleccionables" unique_id=1624224232 instance=ExtResource("9_0iorr")]
 position = Vector2(-38420, 12680)
 
-[node name="BolaDragon5" parent="Node2D" unique_id=776228484 instance=ExtResource("10_gewoo")]
+[node name="BolaDragon5" parent="coleccionables" unique_id=776228484 instance=ExtResource("10_gewoo")]
 position = Vector2(24540, 6280)
 
-[node name="BolaDragon6" parent="Node2D" unique_id=58565657 instance=ExtResource("11_nsn85")]
+[node name="BolaDragon6" parent="coleccionables" unique_id=58565657 instance=ExtResource("11_nsn85")]
 position = Vector2(61360, 13240)
 
-[node name="BolaDragon7" parent="Node2D" unique_id=38528855 instance=ExtResource("12_ypa7m")]
+[node name="BolaDragon7" parent="coleccionables" unique_id=38528855 instance=ExtResource("12_ypa7m")]
 position = Vector2(-44420, 12000)
+
+[node name="enemigos" type="Node2D" parent="." unique_id=1955588281]
+scale = Vector2(0.15, 0.15)
+
+[node name="ene_dyn" parent="enemigos" unique_id=1831578707 instance=ExtResource("13_0iorr")]
+position = Vector2(-20, 3506.6665)
+
+[node name="ene_dyn3" parent="enemigos" unique_id=1200611040 instance=ExtResource("13_0iorr")]
+position = Vector2(-10993.333, 2973.3333)
+
+[node name="ene_dyn4" parent="enemigos" unique_id=563992958 instance=ExtResource("13_0iorr")]
+position = Vector2(-12346.666, 4260)
+
+[node name="ene_dyn5" parent="enemigos" unique_id=643555323 instance=ExtResource("13_0iorr")]
+position = Vector2(-10373.333, 4266.6665)
+
+[node name="ene_dyn7" parent="enemigos" unique_id=1552683925 instance=ExtResource("13_0iorr")]
+position = Vector2(-12219.999, 1593.3333)
+
+[node name="ene_dyn2" parent="enemigos" unique_id=2057827414 instance=ExtResource("13_0iorr")]
+position = Vector2(-7586.6665, 3733.3333)
+
+[node name="ene_dyn6" parent="enemigos" unique_id=56545217 instance=ExtResource("13_0iorr")]
+position = Vector2(-3746.6667, 2126.6665)
+
+[node name="ene_dyn8" parent="enemigos" unique_id=1284719192 instance=ExtResource("13_0iorr")]
+position = Vector2(8413.333, 3939.9998)
+
+[node name="ene_dyn9" parent="enemigos" unique_id=1931642798 instance=ExtResource("13_0iorr")]
+position = Vector2(17499.998, 3740)

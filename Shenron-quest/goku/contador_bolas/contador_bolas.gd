@@ -3,7 +3,7 @@ extends Control
 @onready var etiqueta = $TextoContador
 
 func _process(_delta):
-	etiqueta.text = "Esferas: " + str(Global.bolas_recogidas) + "/7"
+	etiqueta.text = str(Global.bolas_recogidas) + "/7"
 	
 	if Global.bolas_recogidas >= 7:
 		cambiar_de_nivel()
