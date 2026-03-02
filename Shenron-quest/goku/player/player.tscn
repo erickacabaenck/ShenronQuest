@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7epmyrkjgqsi"]
 
 [ext_resource type="Script" uid="uid://j7fqgs7xd3mw" path="res://player/player.gd" id="1_rkbax"]
-[ext_resource type="Texture2D" uid="uid://b6qtvap8d1vok" path="res://player/img/DragonBallSprites.png" id="2_rkbax"]
+[ext_resource type="Texture2D" uid="uid://c17flnvkmm04g" path="res://player/img/DragonBallSprites.png" id="2_rkbax"]
 [ext_resource type="PackedScene" uid="uid://cyjs03gsq523a" path="res://Timer/Timer.tscn" id="3_g1dw6"]
 [ext_resource type="PackedScene" uid="uid://idhuvvp0bxme" path="res://contador_vidas/contador_vidas.tscn" id="4_yw30f"]
 
@@ -290,7 +290,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
-size = Vector2(41, 46)
+size = Vector2(36, 35)
 
 [node name="player" type="CharacterBody2D" unique_id=314733550 groups=["agua"]]
 position = Vector2(0, -3)
@@ -307,12 +307,12 @@ position = Vector2(-969.19257, -2949.4817)
 scale = Vector2(0.9523828, 0.96392006)
 sprite_frames = SubResource("SpriteFrames_4flbx")
 animation = &"run"
-frame_progress = 0.07042084
+frame_progress = 0.96533775
 offset = Vector2(1088, 3013)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203791702]
-position = Vector2(60.5, -37)
+position = Vector2(69, -31.5)
 shape = SubResource("RectangleShape2D_rkbax")
 metadata/_edit_group_ = true
 
@@ -328,3 +328,11 @@ drag_vertical_offset = -0.6
 [node name="Timer" parent="CanvasLayer" unique_id=1823423660 instance=ExtResource("3_g1dw6")]
 
 [node name="ContadorVidas" parent="CanvasLayer" unique_id=1588794811 instance=ExtResource("4_yw30f")]
+[node name="attack" type="AudioStreamPlayer" parent="." unique_id=1742832552]
+stream = ExtResource("5_g6k8r")
+
+[node name="jump" type="AudioStreamPlayer" parent="." unique_id=611833115]
+stream = ExtResource("4_qjkh3")
+
+[node name="dead" type="AudioStreamPlayer" parent="." unique_id=1513763110]
+stream = ExtResource("6_g6k8r")

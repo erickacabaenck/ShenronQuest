@@ -12,6 +12,9 @@ signal jugador_murio
 @export var air_friction = 700
 
 @onready var ani_player = $AnimatedSprite2D
+@onready var attack = $attack
+@onready var jump = $jump
+@onready var dead = $dead
 
 var atacar: bool = false
 var muerto: bool = false
@@ -76,6 +79,7 @@ func update_animation(input_axis):
 	if not is_on_floor():
 		if ani_player.animation != "jump":
 			ani_player.play("jump")
+			jump.play()
 	elif input_axis != 0:
 		ani_player.speed_scale = max(abs(velocity.x) / speed, 0.7)
 		ani_player.flip_h = (input_axis < 0)
@@ -89,6 +93,7 @@ func update_animation(input_axis):
 func ejecutar_ataque():
 	atacar = true
 	ani_player.play("attack")
+	attack.play()
 	await ani_player.animation_finished
 	atacar = false
 
