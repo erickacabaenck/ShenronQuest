@@ -81,7 +81,7 @@ Lo mismo con el enemigo dinámico del juego.
 
 #### Motor de desarrollo
 
-El videojuego ha sido desarrollado utilizando **Godot Engine**, un motor de videojuegos open source que permite crear videojuegos en dos y tres dimensiones. Godot utiliza una arquitectura basada en **nodos y escenas**, lo que facilita la organización modular de los elementos del juego (Godot Engine, 2024).
+El videojuego ha sido desarrollado utilizando **Godot Engine**, un motor de videojuegos open source que permite crear videojuegos en dos y tres dimensiones. Godot utiliza una arquitectura basada en **nodos y escenas**.
 
 Cada escena puede contener múltiples nodos que representan diferentes componentes del juego, como personajes, cámaras o elementos del entorno.
 
