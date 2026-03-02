@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://b3to4vbg0umwc"]
+[gd_scene format=3 uid="uid://bsoclmjfgfml6"]
 
-[ext_resource type="Script" uid="uid://ba2205pmbubyj" path="res://menu_muerte/menu_muerte.gd" id="1_1fhl7"]
-[ext_resource type="Texture2D" uid="uid://cpsak1mbyqmf0" path="res://menu_muerte/img/49fe26db-312d-4b85-b30c-5b7ec037e185.png" id="2_1fhl7"]
+[ext_resource type="Script" path="res://menu_muerte/menu_muerte.gd" id="1_1fhl7"]
+[ext_resource type="Texture2D" uid="uid://b2a8rcysufht7" path="res://menu_muerte/img/49fe26db-312d-4b85-b30c-5b7ec037e185.png" id="2_1fhl7"]
+[ext_resource type="AudioStream" uid="uid://dofq400xjeu2o" path="res://menu_muerte/music/Dragon Ball Z- Sad Theme - Kiantese.mp3" id="3_qu4f1"]
 
 [node name="MenuMuerte" type="Control" unique_id=1923506874]
 layout_mode = 3
@@ -31,6 +32,11 @@ text = "Reintentar"
 [node name="btn_menu" type="Button" parent="VBoxContainer" unique_id=996326803]
 layout_mode = 2
 text = "Menu"
+
+[node name="music" type="AudioStreamPlayer" parent="." unique_id=1303458637]
+stream = ExtResource("3_qu4f1")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="VBoxContainer/btn_restart" to="." method="_on_btn_restart_pressed"]
 [connection signal="pressed" from="VBoxContainer/btn_menu" to="." method="_on_btn_menu_pressed"]
