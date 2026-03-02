@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7epmyrkjgqsi"]
 
 [ext_resource type="Script" uid="uid://j7fqgs7xd3mw" path="res://player/player.gd" id="1_rkbax"]
-[ext_resource type="Texture2D" uid="uid://c17flnvkmm04g" path="res://player/img/DragonBallSprites.png" id="2_rkbax"]
+[ext_resource type="Texture2D" uid="uid://b6qtvap8d1vok" path="res://player/img/DragonBallSprites.png" id="2_rkbax"]
 [ext_resource type="PackedScene" uid="uid://cyjs03gsq523a" path="res://Timer/Timer.tscn" id="3_g1dw6"]
 [ext_resource type="AudioStream" uid="uid://sxbv8pjkhbd1" path="res://player/SE/lumora_studios-pixel-jump-319167.mp3" id="4_qjkh3"]
 [ext_resource type="AudioStream" uid="uid://dq8bffua1ttpl" path="res://player/SE/dragon-studio-whoosh-effect-382717.mp3" id="5_g6k8r"]
