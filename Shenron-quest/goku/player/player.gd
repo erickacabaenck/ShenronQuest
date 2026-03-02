@@ -3,10 +3,10 @@ extends CharacterBody2D
 signal vidas_actualizadas(cantidad)
 signal jugador_murio
 
-@export var speed = 500
-@export var acceleration = 600
+@export var speed = 350
+@export var acceleration = 250
 @export var gravity_scale = 2
-@export var friction = 1500
+@export var friction = 20000
 @export var jump_force = -700
 @export var air_acceleration = 2000
 @export var air_friction = 700
