@@ -11,6 +11,7 @@ var vidas: int = 3:
 var tiempo_total: float = 420.0
 var tiempo_restante: float = 420.0
 var detener_tiempo: bool = false
+var bolas_recogidas = 0
 
 func resetear_juego():
 	vidas = vidas_maximas
