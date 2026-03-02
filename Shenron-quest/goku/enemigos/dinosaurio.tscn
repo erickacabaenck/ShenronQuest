@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dkvphehrrbyo4"]
+
+[ext_resource type="Texture2D" path="res://enemigos/img/Gemini_Generated_Image_1anyph1anyph1any-removebg-preview.png" id="1_lkh3k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3yj8r"]
+size = Vector2(61, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yj8r"]
+atlas = ExtResource("1_lkh3k")
+region = Rect2(28, 231, 90, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4vsn"]
+atlas = ExtResource("1_lkh3k")
+region = Rect2(118, 231, 90, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wv2p8"]
+atlas = ExtResource("1_lkh3k")
+region = Rect2(208, 231, 90, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_275jl"]
+atlas = ExtResource("1_lkh3k")
+region = Rect2(298, 231, 90, 63)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_anmic"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yj8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4vsn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wv2p8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_275jl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="ene_dyn_dino" type="CharacterBody2D" unique_id=441946087]
+
+[node name="col_ene_dyn" type="CollisionShape2D" parent="." unique_id=1690028846]
+position = Vector2(1.5, 0.5)
+shape = SubResource("RectangleShape2D_3yj8r")
+
+[node name="ani_ene_dyn" type="AnimatedSprite2D" parent="." unique_id=1957732997]
+sprite_frames = SubResource("SpriteFrames_anmic")
+frame_progress = 0.8148206
+
+[node name="ene_area" type="Area2D" parent="." unique_id=1468981317]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ene_area" unique_id=1902129640]
+
+[node name="detectorDerecho" type="RayCast2D" parent="ene_area" unique_id=1000160941]
+position = Vector2(-29, 1)
+
+[node name="detetorIzquierdo" type="RayCast2D" parent="ene_area" unique_id=2094925988]
+position = Vector2(32, 4)
