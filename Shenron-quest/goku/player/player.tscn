@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://j7fqgs7xd3mw" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Texture2D" uid="uid://b6qtvap8d1vok" path="res://player/img/DragonBallSprites.png" id="2_rkbax"]
 [ext_resource type="PackedScene" uid="uid://cyjs03gsq523a" path="res://Timer/Timer.tscn" id="3_g1dw6"]
+[ext_resource type="PackedScene" uid="uid://idhuvvp0bxme" path="res://contador_vidas/contador_vidas.tscn" id="4_boad6"]
 [ext_resource type="AudioStream" uid="uid://sxbv8pjkhbd1" path="res://player/SE/lumora_studios-pixel-jump-319167.mp3" id="4_qjkh3"]
 [ext_resource type="AudioStream" uid="uid://dq8bffua1ttpl" path="res://player/SE/dragon-studio-whoosh-effect-382717.mp3" id="5_g6k8r"]
 [ext_resource type="AudioStream" uid="uid://dfyd7a163sma4" path="res://player/SE/floraphonic-brass-fail-11-a-207140.mp3" id="6_g6k8r"]
@@ -328,6 +329,12 @@ drag_vertical_offset = -0.6
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=653936379]
 
 [node name="Timer" parent="CanvasLayer" unique_id=1823423660 instance=ExtResource("3_g1dw6")]
+
+[node name="ContadorVidas" parent="CanvasLayer" unique_id=1588794811 instance=ExtResource("4_boad6")]
+offset_left = 10.0
+offset_top = 61.0
+offset_right = 10.0
+offset_bottom = 61.0
 
 [node name="attack" type="AudioStreamPlayer" parent="." unique_id=1742832552]
 stream = ExtResource("5_g6k8r")
