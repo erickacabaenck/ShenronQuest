@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bo4ghpuii62gu"]
 
+[ext_resource type="Script" uid="uid://bsnf77bn37388" path="res://master/karin.gd" id="1_hwq4b"]
 [ext_resource type="Texture2D" uid="uid://d1nrq6kaiac2j" path="res://master/img/MasterN.png" id="1_vmca8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hwq4b"]
@@ -39,6 +40,7 @@ animations = [{
 }]
 
 [node name="karin" type="Node2D" unique_id=1745853393]
+script = ExtResource("1_hwq4b")
 
 [node name="ani_karin" type="AnimatedSprite2D" parent="." unique_id=533920439]
 position = Vector2(144, -111.25)
