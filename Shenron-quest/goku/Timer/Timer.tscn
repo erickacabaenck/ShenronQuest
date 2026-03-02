@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cyjs03gsq523a"]
 
 [ext_resource type="Script" uid="uid://daom6mb5ddq4e" path="res://Timer/timer.gd" id="1_e4beo"]
+[ext_resource type="Texture2D" uid="uid://db1aloi7j1on7" path="res://Timer/img/reloj.png" id="2_b0mrp"]
 
 [node name="Timer" type="Control" unique_id=1823423660]
 layout_mode = 3
@@ -13,10 +14,15 @@ script = ExtResource("1_e4beo")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=133394813]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 35.0
+offset_top = -2.0
+offset_right = 75.0
+offset_bottom = 38.0
 
 [node name="Label" type="Label" parent="HBoxContainer" unique_id=1049250692]
 layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="HBoxContainer" unique_id=2087719642]
+position = Vector2(-18.000004, 18)
+scale = Vector2(0.11425779, 0.1015625)
+texture = ExtResource("2_b0mrp")
